@@ -31,7 +31,7 @@ export class AddEmployeeComponent implements OnInit {
     this.employeesService.addEmployee(this.addEmployeeRequest)
     .subscribe({
       next:(Employee) =>{
-        this.router.navigate(['Employees']);
+        console.log(Employee);
       }
     });
   }
